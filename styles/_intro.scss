@@ -17,7 +17,6 @@
 }
 
 #clock {
-  margin-bottom: 20px;
   font-size: 130px;
   color: #fff;
 }
@@ -56,6 +55,14 @@
 }
 
 #todo-list {
+  height: 150px;
+  padding: 10px 0;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+
   li {
     position: relative;
     display: flex;
@@ -67,7 +74,7 @@
 
     span {
       position: relative;
-      top: 1px;
+      top: 2px;
       padding-left: 20px;
       font-size: 20px;
     }
@@ -95,7 +102,7 @@
   span {
     display: block;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     color: #fff;
 
     &:last-child {
@@ -111,7 +118,7 @@
   top: 10px;
   right: 15px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
 
   .temp {
