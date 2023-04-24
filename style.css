@@ -1,2 +1,137 @@
-p {
-  color: red; }
+@charset "UTF-8";
+* {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box; }
+
+h1 {
+  margin: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+button,
+input {
+  background-color: transparent;
+  border: 0; }
+  button:focus,
+  input:focus {
+    outline: none;
+    box-shadow: none; }
+
+a,
+button {
+  cursor: pointer; }
+
+button {
+  padding: 0; }
+
+ul,
+ol {
+  padding-left: 0;
+  list-style: none; }
+
+.hidden {
+  display: none; }
+
+.user-content {
+  position: relative; }
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff; }
+
+#clock {
+  margin-bottom: 20px;
+  font-size: 130px;
+  color: #fff; }
+
+#login-form,
+#todo-form {
+  border-bottom: 1px solid #fff; }
+  #login-form input,
+  #todo-form input {
+    color: #fff; }
+    #login-form input::placeholder,
+    #todo-form input::placeholder {
+      color: #fff; }
+  #login-form button,
+  #todo-form button {
+    display: none; }
+
+#login-form {
+  margin-bottom: 30px; }
+  #login-form input {
+    font-size: 30px; }
+
+#todo-form {
+  margin-bottom: 20px; }
+  #todo-form input {
+    font-size: 20px; }
+
+#todo-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  padding: 0 10px;
+  margin-bottom: 10px; }
+  #todo-list li span {
+    position: relative;
+    top: 1px;
+    padding-left: 20px;
+    font-size: 20px; }
+  #todo-list li button {
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px; }
+
+#greeting {
+  margin-bottom: 20px; }
+
+#quote {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%); }
+  #quote span {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff; }
+    #quote span:last-child::before {
+      content: '-'; }
+
+#weather {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff; }
+  #weather .temp {
+    margin-right: 4px; }
+    #weather .temp::after {
+      content: '°C'; }
+  #weather .city::before {
+    content: '@'; }
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%; }
+
+/*# sourceMappingURL=style.css.map */

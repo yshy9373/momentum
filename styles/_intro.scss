@@ -1,0 +1,139 @@
+.hidden {
+  display: none;
+}
+
+.user-content {
+  position: relative;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+
+#clock {
+  margin-bottom: 20px;
+  font-size: 130px;
+  color: #fff;
+}
+
+#login-form,
+#todo-form {
+  border-bottom: 1px solid #fff;
+
+  input {
+    color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  button {
+    display: none;
+  }
+}
+
+#login-form {
+  margin-bottom: 30px;
+
+  input {
+    font-size: 30px;
+  }
+}
+
+#todo-form {
+  margin-bottom: 20px;
+
+  input {
+    font-size: 20px;
+  }
+}
+
+#todo-list {
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+
+    span {
+      position: relative;
+      top: 1px;
+      padding-left: 20px;
+      font-size: 20px;
+    }
+
+    button {
+      position: absolute;
+      left: 0;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+#greeting {
+  margin-bottom: 20px;
+}
+
+#quote {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+
+  span {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+
+    &:last-child {
+      &::before {
+        content: '-';
+      }
+    }
+  }
+}
+
+#weather {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+
+  .temp {
+    margin-right: 4px;
+
+    &::after {
+      content: '°C';
+    }
+  }
+
+  .city {
+    &::before {
+      content: '@';
+    }
+  }
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
